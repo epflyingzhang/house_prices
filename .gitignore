@@ -2,4 +2,3 @@ data/
 references/
 house_prices_aux.py
 .ipynb_checkpoints/
-.gitignore

@@ -51,12 +51,33 @@ In this round of analysis, I focused on creating a workflow for data cleaning an
 - Checking normality for target variable and important features, and applying log-transform
 - Visualizing potential outliers and making careful decision for deletion
 - Creating customized One Hot Encoding method to avoid information leakage from test data
-- Implementing one subclass of sklearn BaseEstimator per data transformation step, and stacking them
-into a sklearn Pipeline to allow for clean code and easy manipulation.
+- Implementing one subclass of sklearn BaseEstimator per data transformation step, and stacking them into a sklearn Pipeline to allow for clean code and easy manipulation.
 
 After feature engineering, I also performed PCA analysis due to the high dimensionality.
 
 In the modeling part, I focused on LASSO regression model and used GridSearchCV to tune regularization parameter. We achieved a PL score of 0.12352 with the final model, which was a significant improvement from round 1 (0.13921 XGBOOST).
+
+
+## Example Visualizations
+
+<img src="pics/outliers.png" alt="pic"
+          	title="Model comparison - CV score" width="600"  />
+
+<img src="pics/normality.png" alt="pic"
+                      	title="Model comparison - CV score" width="600"  />
+
+<img src="pics/corr.png" alt="pic"
+	title="Correlation Heatmap" width="300"  />
+
+  <img src="pics/model_compare.png" alt="pic"
+      	title="Model comparison - CV score" width="600"  />
+
+<img src="pics/feature_importance.png" alt="pic"
+  	title="LASSO: feature importance" width="300"  />
+
+
+
+
 
 
 

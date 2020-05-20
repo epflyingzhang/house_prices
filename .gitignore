@@ -2,3 +2,5 @@ data/
 references/
 house_prices_aux.py
 .ipynb_checkpoints/
+df_test_clean.csv
+df_train_clean.csv
